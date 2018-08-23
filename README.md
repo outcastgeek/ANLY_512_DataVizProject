@@ -26,7 +26,7 @@ If you are on a team, INCLUDE ALL TEAM MEMBER NAMES AT THE TOP OF YOUR PAPER.
 * [WikidataQueryServiceR](https://cran.r-project.org/web/packages/WikidataQueryServiceR/index.html) is the API Client Library for 'Wikidata Query Service'
 
   Example:
-  ```{r}
+  ```r
   # Install the Library to Query Wikidata
   install.packages("WikidataQueryServiceR")
   

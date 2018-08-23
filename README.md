@@ -47,6 +47,8 @@ If you are on a team, INCLUDE ALL TEAM MEMBER NAMES AT THE TOP OF YOUR PAPER.
     }')
   ```
 * [Using R to Analyse Linked Data](https://medium.swirrl.com/using-r-to-analyse-linked-data-7225eefe2eb8)
+
+Example:
 ```r
 # Install SPARQL, the library to Issue RDF Queries into Semantic Datasets
 install.packages("SPARQL")

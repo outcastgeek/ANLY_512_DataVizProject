@@ -25,6 +25,7 @@ If you are on a team, INCLUDE ALL TEAM MEMBER NAMES AT THE TOP OF YOUR PAPER.
 
 * [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets/blob/master/README.rst) is a list of topic-centric public data sources in high quality which have been collected and tidied from blogs, answers, and user responses.
 * [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) contains the free knowledge base with 49,887,230 data items that anyone can edit.
+* [SPARQL](https://en.wikipedia.org/wiki/SPARQL) (pronounced "sparkle", a recursive acronym[2] for SPARQL Protocol and RDF Query Language) is an [RDF query language](https://en.wikipedia.org/wiki/RDF_query_language).
 * [WikidataQueryServiceR](https://cran.r-project.org/web/packages/WikidataQueryServiceR/index.html) is the API Client Library for 'Wikidata Query Service'
 
   Example:
@@ -46,3 +47,50 @@ If you are on a team, INCLUDE ALL TEAM MEMBER NAMES AT THE TOP OF YOUR PAPER.
     }')
   ```
 * [Using R to Analyse Linked Data](https://medium.swirrl.com/using-r-to-analyse-linked-data-7225eefe2eb8)
+```r
+# Install SPARQL, the library to Issue RDF Queries into Semantic Datasets
+install.packages("SPARQL")
+
+# Load the library
+library(SPARQL)
+
+# Run a query
+endpoint <- 'http://statistics.gov.scot/sparql'
+query <- 'PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdmx: <http://purl.org/linked-data/sdmx/2009/concept#>
+PREFIX data: <http://statistics.gov.scot/data/>
+PREFIX sdmxd: <http://purl.org/linked-data/sdmx/2009/dimension#>
+PREFIX mp: <http://statistics.gov.scot/def/measure-properties/>
+PREFIX stat: <http://statistics.data.gov.uk/def/statistical-entity#>
+SELECT ?areaname ?nratio ?yearname ?areatypename WHERE {
+?indicator qb:dataSet data:alcohol-related-discharge ;
+             sdmxd:refArea ?area ;
+             sdmxd:refPeriod ?year ;
+             mp:ratio ?nratio .
+?year rdfs:label ?yearname .
+  
+?area stat:code ?areatype ;
+      rdfs:label ?areaname .
+?areatype rdfs:label ?areatypename .
+}'
+qd <- SPARQL(endpoint,query)
+
+# Inspect the query results
+head(qd)
+df <- qd$results
+head(df)
+
+# Lets plot some data
+df2013 <- df[(df$areatypename == 'Council Areas' & df$yearname == '2012-2013'), ]
+
+library(ggplot2)
+
+chart <- ggplot(data = df2013, aes(x=areaname, y=nratio)) + geom_bar(stat='identity')
+
+chart <- ggplot(data = df2013, aes(x=reorder(areaname, -nratio), y=nratio, fill=areaname)) + theme_bw() + geom_bar(stat='identity') + theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5)) + ggtitle('Alcohol-related Hospital Discharges 2012–2013 (Rate per 10,000 people)') + labs(x='Council Area', y='Rate per 100,000 people') + theme(legend.position='none')
+
+chart
+
+```
+

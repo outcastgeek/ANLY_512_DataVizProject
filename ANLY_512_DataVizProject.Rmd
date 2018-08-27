@@ -1,0 +1,90 @@
+---
+title: "ANLY 512 DataViz Project"
+author:
+- "Akpany Benjamin Ebby"
+- "Melina"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    highlight: zenburn
+comment: Rmd Document with Markdown + Embedded R Code
+references:
+- id: munzner2015
+  title: Visualization Analysis and Design (AK Peters Visualization Series)
+  author:
+  - family: Munzner
+    given: Tamara
+  publisher:  CRC Press Kindle Edition
+  page: 97
+  type: book
+  isbn: 9781498759717
+  issued:
+    year: 2015
+---
+
+---
+
+#### Document as of `r Sys.Date()`
+
+```{r setup, include=FALSE, purl=FALSE, eval=TRUE}
+
+source('R/ANLY512_DataVizProject_Helper.R')
+
+```
+
+```{r echo=FALSE}
+
+library(knitr)
+library(kableExtra)
+read_chunk('R/ANLY512_DataVizProject_Chunks.R')
+
+```
+
+Some helper functions do exists to support the code snippets below such as: ```fullFilePath```
+
+---
+
+# DataViz Project
+
+---
+
+Let's start by installing the __*[Required Libraries]*__, then load them, and proceed to __*[Loading the Data Sheets]*__.
+
+```{r installLibraries, echo=FALSE, eval=FALSE}
+```
+
+```{r loadLibraries, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r loadData, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+## Conclusion
+
+Our analysis refererred to concepts from [see @munzner2015].
+
+---
+
+# Appendix:
+
+### Required Libraries
+
+```{r installLibraries, eval=FALSE}
+```
+
+```{r loadLibraries, eval=FALSE}
+```
+
+### Helper Functions
+
+```{r helperFunctions, eval=FALSE}
+```
+
+### Loading the Data
+
+```{r loadData, eval=FALSE}
+```
+
+---
+
+## References

@@ -18,6 +18,8 @@ If you are on a team, INCLUDE ALL TEAM MEMBER NAMES AT THE TOP OF YOUR PAPER.
 # Setup (Windows)
 
 * [Using Version Control with RStudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
+* [Git for Windown](https://git-scm.com/)
+* [Github Desktop](https://desktop.github.com/)
 
 // TODO
 

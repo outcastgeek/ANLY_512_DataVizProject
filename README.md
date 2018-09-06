@@ -25,6 +25,7 @@ If you are on a team, INCLUDE ALL TEAM MEMBER NAMES AT THE TOP OF YOUR PAPER.
 
 # Links
 
+* [Google Dataset Search](https://toolbox.google.com/datasetsearch) is very interesting, and a related discussion can be found [here on HN](https://news.ycombinator.com/item?id=17919297)
 * [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets/blob/master/README.rst) is a list of topic-centric public data sources in high quality which have been collected and tidied from blogs, answers, and user responses.
 * [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) contains the free knowledge base with 49,887,230 data items that anyone can edit.
 * [SPARQL](https://en.wikipedia.org/wiki/SPARQL) (pronounced "sparkle", a recursive acronym[2] for SPARQL Protocol and RDF Query Language) is an [RDF query language](https://en.wikipedia.org/wiki/RDF_query_language).

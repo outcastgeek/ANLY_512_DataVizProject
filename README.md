@@ -25,8 +25,8 @@ If you are on a team, INCLUDE ALL TEAM MEMBER NAMES AT THE TOP OF YOUR PAPER.
 
 # Links
 
-* [Twitter Threads](https://www.kaggle.com/danielgrijalvas/twitter-threads)
-* [24 thousand tweets later](https://www.kaggle.com/derrickmwiti/24-thousand-tweets-later#tweets.csv)
+* [Twitter Threads](https://www.kaggle.com/danielgrijalvas/twitter-threads)... or blog posts? Analyzing engagement in Twitter threads
+* [24 thousand tweets later](https://www.kaggle.com/derrickmwiti/24-thousand-tweets-later#tweets.csv) 2017 tweets from incubators and accelerators
 * [Google Dataset Search](https://toolbox.google.com/datasetsearch) is very interesting, and a related discussion can be found [here on HN](https://news.ycombinator.com/item?id=17919297)
 * [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets/blob/master/README.rst) is a list of topic-centric public data sources in high quality which have been collected and tidied from blogs, answers, and user responses.
 * [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) contains the free knowledge base with 49,887,230 data items that anyone can edit.

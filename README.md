@@ -25,6 +25,7 @@ If you are on a team, INCLUDE ALL TEAM MEMBER NAMES AT THE TOP OF YOUR PAPER.
 
 # Links
 
+* [NYC Uber Pickups with Weather and Holidays](https://www.kaggle.com/yannisp/uber-pickups-enriched/home) Subset of Uber pickup data with weather, borough, and holidays
 * [Twitter Threads](https://www.kaggle.com/danielgrijalvas/twitter-threads)... or blog posts? Analyzing engagement in Twitter threads
 * [24 thousand tweets later](https://www.kaggle.com/derrickmwiti/24-thousand-tweets-later#tweets.csv) 2017 tweets from incubators and accelerators
 * [Google Dataset Search](https://toolbox.google.com/datasetsearch) is very interesting, and a related discussion can be found [here on HN](https://news.ycombinator.com/item?id=17919297)

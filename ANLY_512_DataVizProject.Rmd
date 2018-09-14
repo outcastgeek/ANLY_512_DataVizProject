@@ -2,7 +2,8 @@
 title: "ANLY 512 DataViz Project"
 author:
 - "Akpany Benjamin Ebby"
-- "Melina"
+- "Lyne Melina Ignanga"
+- "Anantha"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
   pdf_document:

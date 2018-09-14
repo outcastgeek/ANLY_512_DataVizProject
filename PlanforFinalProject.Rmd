@@ -1,0 +1,32 @@
+---
+title: "ANLY 512 DataViz Final Project Plan"
+author:
+- "Akpany Benjamin Ebby"
+- "Lyne Melina Ignanga"
+- "Anantha"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    highlight: zenburn
+comment: Rmd Document with Markdown + Embedded R Code
+references:
+- id: munzner2015
+  title: Visualization Analysis and Design (AK Peters Visualization Series)
+  author:
+  - family: Munzner
+    given: Tamara
+  publisher:  CRC Press Kindle Edition
+  page: 97
+  type: book
+  isbn: 9781498759717
+  issued:
+    year: 2015
+---
+
+---
+
+#### Document as of `r Sys.Date()`
+
+
+
+

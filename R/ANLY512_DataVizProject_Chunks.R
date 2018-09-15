@@ -57,6 +57,25 @@ style <- function(dt, full_width = F, angle = 0) {
   style_dt
 }
 
+## @knitr loadUberTaxiData
+
+taxiWeatherFile <- 'new-york-city-taxi-trip-hourly-weather.csv'
+taxiWeatherData <- taxiWeatherFile %>%
+  fullFilePath %>%
+  read.csv(encoding = "UTF-8", header=TRUE, stringsAsFactors=FALSE)
+
+#taxiWeatherData %>% summarize %>% fmt(caption = "New York City Taxi Data Summary") #%>% style(full_width = T, angle = 45)
+taxiWeatherData %>% stat.desc %>% fmt(caption = "New York City Taxi Data Description") %>% style(full_width = T, angle = 45)
+
+uberNycFile <- 'uber_nyc_enriched.csv'
+uberNycData <- uberNycFile %>%
+  fullFilePath %>%
+  read.csv(encoding = "UTF-8", header=TRUE, stringsAsFactors=FALSE)
+
+#uberNycData %>% summarize %>% fmt(caption = "Uber New York City Data Summary") %>% style(full_width = T, angle = 45)
+uberNycData %>% stat.desc %>% fmt(caption = "Uber New York City Data Description") %>% style(full_width = T, angle = 45)
+
+
 ## @knitr loadData
 
 # Run Sample Wikidata Query

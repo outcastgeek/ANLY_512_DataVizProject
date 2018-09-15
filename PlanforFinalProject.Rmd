@@ -15,18 +15,118 @@ references:
   author:
   - family: Munzner
     given: Tamara
-  publisher:  CRC Press Kindle Edition
+  publisher: CRC Press Kindle Edition
   page: 97
   type: book
-  isbn: 9781498759717
+  isbn: "9781498759717"
   issued:
-    year: 2015
+  year: 2015
+- id: sustainable_transport2015
+  title: Sustainable Urban Transport
+  author:
+  - family: Attard
+    given: Maria
+  - family: Shiftan
+    given: Yoram
+  - family: Ison
+    given: Stephen
+  - family: Shaw
+    given: Jon
+  publisher: Emerald Publishing Limited
+  type: book
+  isbn: "9781784416157"
+  issued:
+  year: 2015
+- id: weather_resilience2013
+  title: Weather and Climate Resilience - Effective Preparedness through National Meteorological and Hydrological Services
+  author:
+  - family: Rogers
+    given: David P.
+  - family: Tsirkunov
+    given: Vladimir V.
+  - family: Tsirkunov
+    given: Vladimir
+  publisher: World Bank Publications
+  type: book
+  isbn: "9781464800276"
+  issued:
+  year: 2013
 ---
 
+```{r setup, include=FALSE, purl=FALSE, eval=TRUE}
+
+source('R/ANLY512_DataVizProject_Helper.R')
+
+```
+
+```{r echo=FALSE}
+
+library(knitr)
+library(kableExtra)
+read_chunk('R/ANLY512_DataVizProject_Chunks.R')
+
+```
+
 ---
 
-#### Document as of `r Sys.Date()`
+# DataViz Project Plan
+
+## Overview of Project.
+
+For this project, we will analyze and visualize the effects of both the weather and holidays patterns on public transportation in New York City.
+In particular, we will bring our focus on how those factors impact the rides or pick ups of [Uber](https://www.uber.com/) as well as [Taxi Cabs](http://www.yellowcabnyctaxi.com/).
+ 
+# Issues Related to Focus.
+As part of our analysis, we will leverage some existing literature on the subjects of public transportation, weather resilience, and Data Visualiztion
+[see @weather_resilience2013 @sustainable_transport2015 @munzner2015].
+
+## Data Sources.
+
+We found the following [Kaggle](https://www.kaggle.com/) datasets very interesting for our project:
+* [NYC Uber Pickups with Weather and Holidays](https://www.kaggle.com/yannisp/uber-pickups-enriched/home) Subset of Uber pickup data with weather, borough, and holidays
+* [New York City Taxi Trip - Hourly Weather Data](https://www.kaggle.com/meinertsen/new-york-city-taxi-trip-hourly-weather-data) Improve Machine Learning with more detailed weather data
+
+```{r loadLibraries, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r loadUberTaxiData}
+```
 
 
+## Current Analysis Strategy.
 
+For our Analysis, we will make two hypothesis that we will attempt to verify:
+* The weather does influence Uber Rides in New York City
+* The weather does influence Taxi Pickups Rides in New York City
+* Holidays do influence Taxi Pickups Rides in New York City
+* Holidays do influence Taxi Pickups Rides in New York City
+* The combination weather and Holidays do influence Taxi Pickups Rides in New York City
+* The combination weather and Holidays do influence Taxi Pickups Rides in New York City
 
+The use of data visualizations or DataVis [@munzner2015] will guide us on where to look as to which factors in the data
+we should focus on. Indeed, graphics such as: *heatmaps*, *density plots*, *ridgeline plots*, *histograms*, *boxplots*
+may come in very handy [@munzner2015].
+
+## Summary of Time Investment of Each Team Member.
+
+The contribution of our team members will be as follows:
+
+__Benjamin:__
+- github repository
+- analysis
+- graphics
+- R scripts
+
+__Lyne:__
+- group communication
+- analysis
+- graphics
+- R scripts
+
+__Anantha:__
+- publications and references
+- analysis
+- graphics
+- R scripts
+
+# bibliography.

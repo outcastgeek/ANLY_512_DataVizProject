@@ -25,7 +25,7 @@ If you are on a team, INCLUDE ALL TEAM MEMBER NAMES AT THE TOP OF YOUR PAPER.
 
 # Links
 
-* [2015 NYC Taxi Trips -- Subset 1.2 million rows](https://www.kaggle.com/dhimananubhav/2015-nyc-taxi-trips-subset-12-million-rows/home)
+* [2015 NYC Taxi Trips -- Subset 1.2 million rows (DO NOT USE)](https://www.kaggle.com/dhimananubhav/2015-nyc-taxi-trips-subset-12-million-rows/home)
 * [NYC Uber Pickups with Weather and Holidays](https://www.kaggle.com/yannisp/uber-pickups-enriched/home) Subset of Uber pickup data with weather, borough, and holidays
 * [New York City Taxi Trip - Hourly Weather Data](https://www.kaggle.com/meinertsen/new-york-city-taxi-trip-hourly-weather-data) Improve Machine Learning with more detailed weather data
 * [Twitter Threads](https://www.kaggle.com/danielgrijalvas/twitter-threads)... or blog posts? Analyzing engagement in Twitter threads
